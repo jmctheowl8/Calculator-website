@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcultator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+    <div class="wrap">
+        <div class="title">
+            <h1>Calcultator</h1>
+        </div>
+        <div class="calc">
+            <div class="showcase">
+                <input type="text" id="prev" readonly>
+                <input type="text" id="cur" readonly>
+            </div>
+            <section class="buttons">
+                <!-- I want to split the numbers and signs in form of a calculator try using css.grid 
+                     -->
+                <button onclick="appendToDisplay('0')" class="numbers">0</button>
+                <button onclick="appendToDisplay('1')" class="numbers">1</button>
+                <button onclick="appendToDisplay('2')" class="numbers">2</button>
+                <button onclick="appendToDisplay('3')" class="numbers">3</button>
+                <button onclick="appendToDisplay('4')" class="numbers">4</button>
+                <button onclick="appendToDisplay('5')" class="numbers">5</button>
+                <button onclick="appendToDisplay('6')" class="numbers">6</button>
+                <button onclick="appendToDisplay('7')" class="numbers">7</button>
+                <button onclick="appendToDisplay('8')" class="numbers">8</button>
+                <button onclick="appendToDisplay('9')" class="numbers">9</button>
+                <button onclick="appendToDisplay('+')" class="operator">+</button>
+                <button onclick="appendToDisplay('-')" class="operator">-</button>
+                <button onclick="appendToDisplay('*')" class="operator">*</button>
+                <button onclick="appendToDisplay('/')" class="operator">/</button>
+                <button onclick="clearAll()"class="special">ESC</button>
+                <button onclick="clearDisplay()" class="special">CLR</button>
+                <button class="special">DEL</button>
+                <button onclick="enter()" class="special">ENT</button>  
+            </section>
+        </div>
+    </div>
+    <script src="app.js"></script> 
+</body>
+</html>
